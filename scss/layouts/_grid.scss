@@ -1,0 +1,960 @@
+/*Landing page*/
+
+.contenido{
+    font-family: 'Nunito', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr, 2fr, 2fr ;
+    grid-template-rows:  15vh, 45vh, 45vh, 5vh;
+    grid-gap: 0.5px;
+    grid-template-areas:    
+    
+    "header header header"
+    "sidebar cuerpo cuerpo"
+    "sidebar cuerpo cuerpo"
+    "footer  footer  footer"    
+    ;
+    
+
+    .body__header{
+        grid-area: header;
+        height: 38px;
+        width: 100vw;
+        color: #E6E6E6;
+        background-image:linear-gradient(to right, #1D558C 0%, #387AC9  20%, #4D97FA 50%, #02E700 100%);  
+        padding-left: 20px;
+        font-size: 25px;
+        box-shadow: 0 2px 5px #7ba9d6 ;
+        font-family: 'Nunito Sans', sans-serif;
+        
+        
+        
+    
+        span{
+            font-weight: 200;
+        }
+        span.bold{
+            font-weight: 800;
+        }
+    }  
+    
+
+    .contenido__sidebar{
+        grid-area: sidebar;
+        height: 88.2vh;
+        width: 260px;
+        background-image:
+        linear-gradient(to right, #1D558C 0%,  #387AC9  100% );
+        color: #E6E6E6;
+        box-shadow: 0 1px 2px #0e3f70;     
+        
+        
+        
+        .sidebar__responsive{
+            display: none;
+        }        
+        
+        div.cliente{            
+            box-shadow: 0 2.5px 5px #0e3f70  ;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-right: 15px;
+            width: 260px;
+
+            p{
+                font-size: 18px;
+                font-weight: 500;
+                padding: 8px 50px 12px 30px;
+                line-height: 1;               
+
+            }
+        }
+
+        .nav__menu{
+            height: 88vh;
+        }
+
+        .navbar-nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-left: 10%;            
+        }
+        
+        li.nav-items{
+            text-decoration: none;
+           
+            
+            align-items: flex-start;
+            color: #bdbdbd;
+            margin-right: 10px;
+            transition: all 0.2s;
+        }
+
+        a.nav-link{
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            color: #bdbdbd;
+            padding-left: 5px;
+            
+
+            .icon1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color:#bdbdbd ;
+                color:#1D558C ;
+                border-radius: 2px;
+                width: 20px;
+                height: 20px;
+                align-self: center;
+                margin-right: 20px;
+            }
+
+            .icon2{
+                display: flex;
+                justify-content: center;
+                align-items: center;                
+                color:#bdbdbd ;                
+                width: 20px;
+                height: 20px;
+                align-self: center;
+                margin-right: 20px;
+            }
+
+            .icon1:hover{
+                background-color: white;
+            }
+            
+
+        }
+
+        a.nav-link:hover{
+            color: white;
+            .icon1:hover{
+                background-color: white;
+            }
+        }
+        
+
+    }
+    .contenido__cuerpo{
+        
+        grid-area: cuerpo;
+        height: auto;
+        display: grid;
+        grid-template-columns: 2fr, 2fr ;
+        grid-template-rows: 5vh ,10vh, 25vh, 10vh;
+        grid-gap: 0.1%;
+        grid-template-areas: 
+            
+    "misCuentas misCuentas"
+    "bloque1 bloque1"
+    "bloque2  bloque3"
+    "bloque4  bloque5"    
+    ;   
+
+
+        .misCuentas{
+            grid-area: misCuentas;
+            border-bottom: #cec7c7 solid 1.5px;
+            height: 12vh;
+            width: 75vw;
+            justify-self: center;                       
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 0;
+
+            .misCuentas__botones{
+                display: flex;
+                justify-content: space-between;
+                width: 28vw;
+                color: #387AC9;
+                align-items: center;
+
+            }
+
+            h2{
+                font-size: 28px;
+                font-weight: 400;
+            }
+
+            div.ver{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                border: #387AC9 1.5px solid;
+                border-radius: 50px;
+                width: 138px;
+                color: #387AC9;
+                padding-left: 20px;
+                padding-right: 10px;
+                height: 35px;
+                transition: all 0.5s;
+            }
+
+            div.ver:hover{
+                background-color:#E1E1E1 ;
+            }
+
+            div.asociar{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border: #387AC9 1.5px solid;
+                border-radius: 50px;
+                width: 205px;
+                color: #387AC9;
+                padding-left: 15px;
+                padding-right: 10px;
+                height: 35px;
+                transition: all 0.5s;
+            }
+
+            div.asociar:hover{
+                background-color:#E1E1E1 ;
+            }
+        }
+
+        .bloque1{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            grid-area: bloque1;
+            border: #f0e9e9 solid 2px;
+            border-radius: 5px;
+            height: 15vh;
+            width: 75vw;
+            margin-left: 20px;
+            background-color: #FBFBFB;
+            border-left: #4D97FA solid 8px;
+
+            h2{
+                font-size: 18px;
+                font-weight: 500;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            
+
+            .bloque1__datos{
+                display: flex;
+                flex-direction: row;
+                border-left: #cec7c7 solid 1.5px;                
+                align-items: center;
+                justify-content: center;
+                padding-left: 20px;
+                
+                svg{
+                    color:#4D97FA;                
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 20px;
+                    justify-content: center;
+
+                    .datos__1{
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+                    .datos__2{
+                        color: gray;
+                        font-size: 15px;
+
+                    }
+                    
+                }
+            }
+
+        }
+
+        @for $i from 2 through 3{
+            .bloque#{$i}{
+                grid-area: bloque#{$i};
+                border: #f0e9e9 solid 2px;
+                border-radius: 5px;
+                height: 25vh;
+                width: 35vw;
+                margin-left: 20px;
+                background-color: #FBFBFB;
+            }
+        }
+
+        @for $i from 4 through 5{
+            .bloque#{$i}{
+                grid-area: bloque#{$i};
+                border: #f0e9e9 solid 2px;
+                border-radius: 5px;
+                height: 20vh;
+                width: 35vw;
+                margin-left: 20px;
+                background-color: #FBFBFB;
+            }
+        }
+
+        .bloque2{
+            display: flex;
+            flex-direction: row;
+            
+
+            .bloque2__parte1{
+                padding-left: 15px;
+                padding-top: 8px;
+
+                .parte1__factura{
+                    font-weight: 450;
+                    font-size: 18px;
+                }
+                .parte1__vencimiento{
+                    color: gray;
+                    font-size: 15px;
+
+                }
+
+            }
+
+            .bloque2__parte2{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: flex-end;
+                padding-left: 17px;
+                
+
+                .parte2__monto{
+                    color: #1D558C ;
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+                .parte2__detalle{
+                    color: #4D97FA;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: stretch;
+                    font-size: 14px;
+                    
+
+                    p{
+                        align-self: center;
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+
+        .bloque3{
+            display: flex;
+            flex-direction: row;
+
+            .bloque3__parte1{
+                padding-left: 15px;
+                padding-top: 8px;
+
+                .parte1__estadoDeCuenta{
+                    font-weight: 450;
+                    font-size: 18px;
+                }
+                .parte1__estado{
+                    color: gray;
+                    font-size: 15px;
+
+                }
+
+            }
+
+            .bloque3__parte2{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+                padding-left: 70px;
+
+                
+                .parte2__boton{
+                    color: #4D97FA;                    
+                    font-size: 15px;
+                    background-color: #cec7c7;
+                    border-radius: 5px;
+                    height: 35px;
+                    margin-bottom: 10px;
+                    padding: 5px 10px;
+                    
+
+                    p{
+                        font-weight: 400;
+                        color: gray;
+                        
+                    }
+                }
+            }
+        }
+
+        .bloque4{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding-left: 10px;
+            transition: all 0.5s;
+
+            .bloque4__textos{
+                width: 26vw;
+                height: 15vh;
+
+                .parte1__estadoDeCuenta{
+                    font-weight: 450;
+                    font-size: 18px;
+                }
+                .parte1__estado{
+                    color: gray;
+                    font-size: 14px;
+                    line-height: 1.3 ;
+
+                }
+            }
+
+            .bloque4__grafica svg{
+                color: #02E700;
+            }
+
+            svg{
+                color: rgb(90, 90, 90);
+            }
+        }
+
+        .bloque4:hover{
+            background-color: #E1E1E1;
+        }
+
+        .bloque5{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding-left: 10px;
+            transition: all 0.5s;
+
+            .bloque5__textos{
+                width: 26vw;
+                height: 15vh;
+
+                .parte1__estadoDeCuenta{
+                    font-weight: 450;
+                    font-size: 18px;
+                }
+                .parte1__estado{
+                    color: gray;
+                    font-size: 14px;
+                    line-height: 1.3 ;
+
+                }
+            }
+
+            .bloque5__grafica svg{
+                color: #02E700;
+            }
+
+            svg{
+                color: rgb(90, 90, 90);
+            }
+        }
+
+        .bloque5:hover{
+            background-color: #E1E1E1;
+        }
+        
+
+    }
+    .contenido__cuerpo--mapa{
+        
+        grid-area: cuerpo;
+        height: auto;
+        display: grid;
+        grid-template-columns: 2fr, 2fr ;
+        grid-template-rows: 5vh ,10vh, 25vh, 10vh;
+        grid-gap: 0.1%;
+        grid-template-areas: 
+            
+    "misCuentas misCuentas"
+    "mapa mapa"
+    "mapa  mapa"
+    "mapa  mapa"    
+    ;   
+
+
+        .misCuentas{
+            grid-area: misCuentas;
+            border-bottom: #cec7c7 solid 1.5px;
+            height: 12vh;
+            width: 75vw;
+            justify-self: center;                       
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 0;
+
+            .misCuentas__botones{
+                display: flex;
+                justify-content: space-between;
+                width: 28vw;
+                color: #387AC9;
+                align-items: center;
+
+            }
+
+            h2{
+                font-size: 28px;
+                font-weight: 400;
+            }
+
+            div.ver{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                border: #387AC9 1.5px solid;
+                border-radius: 50px;
+                width: 138px;
+                color: #387AC9;
+                padding-left: 20px;
+                padding-right: 10px;
+                height: 35px;
+                transition: all 0.5s;
+            }
+
+            div.ver:hover{
+                background-color:#E1E1E1 ;
+            }
+
+            div.asociar{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border: #387AC9 1.5px solid;
+                border-radius: 50px;
+                width: 205px;
+                color: #387AC9;
+                padding-left: 15px;
+                padding-right: 10px;
+                height: 35px;
+                transition: all 0.5s;
+            }
+
+            div.asociar:hover{
+                background-color:#E1E1E1 ;
+            }
+        }
+
+               
+
+        div#map{
+            height: 70vh;
+            width: 75vw;
+                     
+        }
+
+        .leaflet-popup-content-wrapper {
+            background: linear-gradient(to right, #2976c4  0%, #4D97FA 50%, #02E700 100%);
+            color: white;
+            text-decoration: none;
+            
+            .popup__a{
+                text-decoration: none;
+            }
+          }
+
+          
+
+    }
+    .contenido__cuerpo--reclamosPrincipal{
+        
+        grid-area: cuerpo;
+        height: auto;
+        display: grid;
+        grid-template-columns: 2fr, 2fr ;
+        grid-template-rows: 5vh ,10vh, 25vh, 10vh;
+        grid-gap: 0.1%;
+        grid-template-areas: 
+            
+    "misCuentas misCuentas"
+    "bloque1 bloque1"
+    "reclamos reclamos"
+    "reclamos reclamos"    
+    ;   
+
+
+        .misCuentas{
+            grid-area: misCuentas;
+            border-bottom: #cec7c7 solid 1.5px;
+            height: 12vh;
+            width: 75vw;
+            justify-self: center;                       
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 0;
+
+            .misCuentas__botones{
+                display: flex;
+                justify-content: space-between;
+                width: 28vw;
+                color: #387AC9;
+                align-items: center;
+
+            }
+
+            h2{
+                font-size: 28px;
+                font-weight: 400;
+            }          
+
+        }   
+
+        .bloque1{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            grid-area: bloque1;
+            border: #f0e9e9 solid 2px;
+            border-radius: 5px;
+            height: 15vh;
+            width: 75vw;
+            margin-left: 20px;
+            background-color: #FBFBFB;
+            border-left: #4D97FA solid 8px;
+
+            h2{
+                font-size: 18px;
+                font-weight: 500;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            
+
+            .bloque1__datos{
+                display: flex;
+                flex-direction: row;
+                border-left: #cec7c7 solid 1.5px;                
+                align-items: center;
+                justify-content: center;
+                padding-left: 20px;
+                
+                svg{
+                    color:#4D97FA;                
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 20px;
+                    justify-content: center;
+
+                    .datos__1{
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+                    .datos__2{
+                        color: gray;
+                        font-size: 15px;
+
+                    }
+                    
+                }
+            }
+
+        }
+
+        .cuerpo__reclamos{
+            grid-area: reclamos;
+            border: #f0e9e9 solid 2px;
+            border-radius: 5px;
+            height: 50vh;
+            width: 75vw;
+            margin-left: 20px;
+            background-color: #FBFBFB;
+        }
+
+        @for $i from 2 through 3{
+            .bloque#{$i}{
+                grid-area: bloque#{$i};
+                border: #f0e9e9 solid 2px;
+                border-radius: 5px;
+                height: 25vh;
+                width: 35vw;
+                margin-left: 20px;
+                background-color: #FBFBFB;
+            }
+        }
+
+        @for $i from 4 through 5{
+            .bloque#{$i}{
+                grid-area: bloque#{$i};
+                border: #f0e9e9 solid 2px;
+                border-radius: 5px;
+                height: 20vh;
+                width: 35vw;
+                margin-left: 20px;
+                background-color: #FBFBFB;
+            }
+        }
+
+        .bloque2{
+            display: flex;
+            flex-direction: row;
+            
+
+            .bloque2__parte1{
+                padding-left: 15px;
+                padding-top: 8px;
+
+                .parte1__factura{
+                    font-weight: 450;
+                    font-size: 18px;
+                }
+                .parte1__vencimiento{
+                    color: gray;
+                    font-size: 15px;
+
+                }
+
+            }
+
+            .bloque2__parte2{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: flex-end;
+                padding-left: 17px;
+                
+
+                .parte2__monto{
+                    color: #1D558C ;
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+                .parte2__detalle{
+                    color: #4D97FA;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: stretch;
+                    font-size: 14px;
+                    
+
+                    p{
+                        align-self: center;
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+
+        .bloque3{
+            display: flex;
+            flex-direction: row;
+
+            .bloque3__parte1{
+                padding-left: 15px;
+                padding-top: 8px;
+
+                .parte1__estadoDeCuenta{
+                    font-weight: 450;
+                    font-size: 18px;
+                }
+                .parte1__estado{
+                    color: gray;
+                    font-size: 15px;
+
+                }
+
+            }
+
+            .bloque3__parte2{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+                padding-left: 70px;
+
+                
+                .parte2__boton{
+                    color: #4D97FA;                    
+                    font-size: 15px;
+                    background-color: #cec7c7;
+                    border-radius: 5px;
+                    height: 35px;
+                    margin-bottom: 10px;
+                    padding: 5px 10px;
+                    
+
+                    p{
+                        font-weight: 400;
+                        color: gray;
+                        
+                    }
+                }
+            }
+        }
+
+        .bloque4{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding-left: 10px;
+            transition: all 0.5s;
+
+            .bloque4__textos{
+                width: 26vw;
+                height: 15vh;
+
+                .parte1__estadoDeCuenta{
+                    font-weight: 450;
+                    font-size: 18px;
+                }
+                .parte1__estado{
+                    color: gray;
+                    font-size: 14px;
+                    line-height: 1.3 ;
+
+                }
+            }
+
+            .bloque4__grafica svg{
+                color: #02E700;
+            }
+
+            svg{
+                color: rgb(90, 90, 90);
+            }
+        }
+
+        .bloque4:hover{
+            background-color: #E1E1E1;
+        }
+
+        .bloque5{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding-left: 10px;
+            transition: all 0.5s;
+
+            .bloque5__textos{
+                width: 26vw;
+                height: 15vh;
+
+                .parte1__estadoDeCuenta{
+                    font-weight: 450;
+                    font-size: 18px;
+                }
+                .parte1__estado{
+                    color: gray;
+                    font-size: 14px;
+                    line-height: 1.3 ;
+
+                }
+            }
+
+            .bloque5__grafica svg{
+                color: #02E700;
+            }
+
+            svg{
+                color: rgb(90, 90, 90);
+            }
+        }
+
+        .bloque5:hover{
+            background-color: #E1E1E1;
+        }
+
+
+       
+
+    }    
+
+    
+
+    .contenido__footer{
+        grid-area: footer;
+        height: 32px;
+        background-image:linear-gradient(to right, #1D558C  0%, #4D97FA 50%, #02E700 100%);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: #E6E6E6;
+        box-shadow: 0 -1px 6px #0e3f70  ;
+        font-family: 'Nunito Sans', sans-serif;
+
+        
+
+        span{
+            font-weight: 200;
+        }
+        span.bold{
+            padding-left: 10px;
+            font-weight: 800;
+        }
+
+        .informacion{
+            font-size: 12px;            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 30vw;
+
+            span{
+                font-weight: 450;
+            }
+            span.bold{
+                padding-left: 10px;
+                font-weight: 600;
+            }
+
+        }
+
+        .redes{
+            font-size: 12px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 15vw;
+            
+            $redes: (
+                facebook,
+                twitter,
+                youtube,
+            );
+
+            @each $red in $redes {
+                .#{$red}{
+                    height: 25px;
+                    width: 25px;
+                    border-radius: 25px;
+                    background-color: #FBFBFB;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+            }
+
+            i{
+                color:#1EA0F2 ;               
+            }
+        }
+    }
+    
+}
