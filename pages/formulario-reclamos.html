@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>edenor</title>
 </head>
 <body>
@@ -26,7 +26,6 @@
         <header class="body__header">
             <span><span class="bold">edenor</span>digital</span>
         </header>
-        
         
         <nav class="navbar nav flex-lg-column navbar-expand-lg navbar-dark contenido__sidebar">          
 
@@ -46,7 +45,7 @@
                     </div>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link"> 
+                            <a href="../index.html" class="nav-link"> 
                                 
                                 <div class="icon1">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
@@ -84,7 +83,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/mapa-interrupciones.html" class="nav-link">
+                            <a href="mapa-interrupciones.html" class="nav-link">
                                 
                                 <div class="icon2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map-fill" viewBox="0 0 16 16">
@@ -96,7 +95,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/formulario-reclamos.html" class="nav-link">
+                            <a href="formulario-reclamos.html" class="nav-link">
                                 
                                 <div class="icon2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-megaphone-fill" viewBox="0 0 16 16">
@@ -139,23 +138,9 @@
             
             <h2 class="sidebar__responsive">Mis cuentas</h2>
         </nav>
-        <section class="contenido__cuerpo">
+        <section class="contenido__cuerpo--reclamosPrincipal">
             <div class="misCuentas">
-                <h2>Mis cuentas</h2>
-                <div class="misCuentas__botones">
-                    <div class="ver">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                        </svg>                     
-                        <span class="text-uppercase">ver lista</span>
-                    </div>
-                    <div class="asociar">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                        </svg>
-                        <span class="text-uppercase">asociar cuenta</span>
-                    </div>
-                </div>
+                <h2>Reclamos</h2>                
             </div>
             <div class="bloque1">
                 <h2>Cuenta</h2>
@@ -170,76 +155,61 @@
                     </div>
                 </div>
             </div>
-            <div class="bloque2">
-                <div class="bloque2__parte1">
-                    <P class="parte1__factura">Factura actual</P>
-                    <p class="parte1__vencimiento">1er Vencimiento: 08/02/2021</p>
-                </div>
-                <div class="bloque2__parte2"> 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                    </svg>                   
-                    <P class="parte2__monto">$1.167,95</P>
-                    <div class="parte2__detalle">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16">
-                            <path d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v6zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z"/>
-                            <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+            <div class="cuerpo__reclamos container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div role="tabpanel">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item col-sm-6 active" role="presentation">
+                                  <a class="nav-link" href="#enCurso" aria-controls="enCurso" data-toggle="tab" role="tab">
+                                      En curso
+                                    </a>
+                                </li>
+                                    
+                                <li class="nav-item col-sm-6" role="presentation">
+                                  <a class="nav-link" href="#cerrados" aria-controls="cerrados" data-toggle="tab" role="tab">
+                                      Cerrados
+                                    </a>
+                                </li>                    
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="enCurso" role="tabpanel">
+                                    <div class="reclamo1 col-sm">
+                                        <h3>Reclamo N: 98421589</h3>
+                                        <p>Día Realizado: 05/03/2021</p>
+                                        <p>Hora Realizado: 11:48 hs</p>
+                                        <p>Tiempo estimado de reposición: 3 horas</p>
+                                        <p>Estado del Reclamo:</p>
+                                        <p><a href="mapa-interrupciones.html">Ver en el mapa</a></p>
+                                        <p><a href="#">Más información acerca del tiempo estimado de reposición</a></p>
+                                        <p><a href="#">Dar de baja el reclamo</a></p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="tab-pane" id="cerrados" role="tabpanel">
+                                    <div class="reclamo1 col-sm">
+                                        <h3>Reclamo N: </h3>
+                                        <p>Día Realizado: 05/03/2021</p>
+                                        <p>Hora Realizado: 11:48 hs</p>
+                                        <p>Tiempo estimado de reposición: 3 horas</p>
+                                        <p>Estado del Reclamo:</p>
+                                        <p><a href="mapa-interrupciones.html">Ver en el mapa</a></p>
+                                        <p><a href="#">Más información acerca del tiempo estimado de reposición</a></p>
+                                        <p><a href="#">Dar de baja el reclamo</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>  
+                <div class="iconoPlus">
+                    <a href="reclamosPageOne.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                         </svg>
-                        <p >DETALLE DE TU FACTURA</p>
-                    </div>
-                </div>
-            </div>
-            <div class="bloque3">
-                <div class="bloque3__parte1">
-                    <P class="parte1__estadoDeCuenta">Estado de Cuenta</P>
-                    <p class="parte1__estado">La cuenta no registra saldo.</p>
-                </div>
-                <div class="bloque3__parte2"> 
-                    <div class="parte2__boton">
-                        <p>OPCIONES DE PAGO</p>
-                    </div>
-                    
-                </div>
-
-            </div>
-            <div class="bloque4">
-                <div class="bloque4__grafica">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
-                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
-                    </svg>
-                </div>
-                <div class="bloque4__textos">
-                    <p class="parte1__estadoDeCuenta">
-                        Evolución de tus consumos
-                    </p>
-                    <p class="parte1__estado">
-                        Accedé a información gráfica sobre tus consumos y también sobre otras cosas
-                    </p>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                </svg>
-            </div>
-            <div class="bloque5">
-                <div class="bloque5__grafica">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
-                        <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z"/>
-                        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z"/>
-                    </svg>
-                </div>
-                <div class="bloque5__textos">
-                    <p class="parte1__estadoDeCuenta">
-                        Historial de facturas y pagos
-                    </p>
-                    <p class="parte1__estado">
-                        Accedé a todas tus facturas y pagos históricos
-                    </p>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                </svg>
-            </div>
+                    </a>
+                </div>              
+            </div>          
 
         </section>
         <footer class="contenido__footer">

@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!-- Fuentes -->
+
     <!-- Scripts iconos-->
     <script src="https://kit.fontawesome.com/3036b42d9f.js" crossorigin="anonymous"></script>
+    <!-- Css para maps leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <!-- Scrips para maps leaflet-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
     <!-- Bootstrap y estilos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -16,17 +26,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>edenor</title>
 </head>
 <body>
     
-    <div class="contenido"> 
+    <div class="contenido">       
         
         <header class="body__header">
             <span><span class="bold">edenor</span>digital</span>
         </header>
-        
         
         <nav class="navbar nav flex-lg-column navbar-expand-lg navbar-dark contenido__sidebar">          
 
@@ -46,7 +55,7 @@
                     </div>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link"> 
+                            <a href="../index.html" class="nav-link"> 
                                 
                                 <div class="icon1">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
@@ -84,7 +93,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/mapa-interrupciones.html" class="nav-link">
+                            <a href="mapa-interrupciones.html" class="nav-link">
                                 
                                 <div class="icon2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map-fill" viewBox="0 0 16 16">
@@ -96,7 +105,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/formulario-reclamos.html" class="nav-link">
+                            <a href="formulario-reclamos.html" class="nav-link">
                                 
                                 <div class="icon2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-megaphone-fill" viewBox="0 0 16 16">
@@ -139,107 +148,12 @@
             
             <h2 class="sidebar__responsive">Mis cuentas</h2>
         </nav>
-        <section class="contenido__cuerpo">
+        <section class="contenido__cuerpo--mapa">
             <div class="misCuentas">
-                <h2>Mis cuentas</h2>
-                <div class="misCuentas__botones">
-                    <div class="ver">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                        </svg>                     
-                        <span class="text-uppercase">ver lista</span>
-                    </div>
-                    <div class="asociar">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                        </svg>
-                        <span class="text-uppercase">asociar cuenta</span>
-                    </div>
-                </div>
-            </div>
-            <div class="bloque1">
-                <h2>Cuenta</h2>
-                <div class="bloque1__datos">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                        <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                    </svg>
-                    <div>
-                        <span class="datos__1">Alquiler, Ramos Mejía</span>
-                        <span class="datos__2">N° 1234567891 - Titular CLIENTE UNO</span>
-                    </div>
-                </div>
-            </div>
-            <div class="bloque2">
-                <div class="bloque2__parte1">
-                    <P class="parte1__factura">Factura actual</P>
-                    <p class="parte1__vencimiento">1er Vencimiento: 08/02/2021</p>
-                </div>
-                <div class="bloque2__parte2"> 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                    </svg>                   
-                    <P class="parte2__monto">$1.167,95</P>
-                    <div class="parte2__detalle">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16">
-                            <path d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v6zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z"/>
-                            <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
-                        </svg>
-                        <p >DETALLE DE TU FACTURA</p>
-                    </div>
-                </div>
-            </div>
-            <div class="bloque3">
-                <div class="bloque3__parte1">
-                    <P class="parte1__estadoDeCuenta">Estado de Cuenta</P>
-                    <p class="parte1__estado">La cuenta no registra saldo.</p>
-                </div>
-                <div class="bloque3__parte2"> 
-                    <div class="parte2__boton">
-                        <p>OPCIONES DE PAGO</p>
-                    </div>
-                    
-                </div>
-
-            </div>
-            <div class="bloque4">
-                <div class="bloque4__grafica">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
-                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
-                    </svg>
-                </div>
-                <div class="bloque4__textos">
-                    <p class="parte1__estadoDeCuenta">
-                        Evolución de tus consumos
-                    </p>
-                    <p class="parte1__estado">
-                        Accedé a información gráfica sobre tus consumos y también sobre otras cosas
-                    </p>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                </svg>
-            </div>
-            <div class="bloque5">
-                <div class="bloque5__grafica">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
-                        <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z"/>
-                        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z"/>
-                    </svg>
-                </div>
-                <div class="bloque5__textos">
-                    <p class="parte1__estadoDeCuenta">
-                        Historial de facturas y pagos
-                    </p>
-                    <p class="parte1__estado">
-                        Accedé a todas tus facturas y pagos históricos
-                    </p>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                </svg>
-            </div>
+                <h2>Mapa de Cortes</h2>
+                
+            </div>            
+            <div id="map"></div>
 
         </section>
         <footer class="contenido__footer">
@@ -267,8 +181,47 @@
         </footer>
 
     </div>
+    <script>
+        // Configuracion de mapa - setview
+        var mymap=L.map('map').setView([-34.664734, -58.551996], 16);
+
+
+        // Ubicacion de tilelayer
+        L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+            maxZoom: 18
+            }).addTo(mymap);
+        
+        // Generacion de marker y definicion de popups
+            var greenIcon = new L.Icon({
+                iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+                shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34],
+                shadowSize: [41, 41]
+            });
+
+        var marker1 = L.marker([-34.663986007954435, -58.55198864945314],{icon: greenIcon}).addTo(mymap);
+
+        var marker2 = L.marker([-34.66574219723623, -58.54971707786398]).addTo(mymap);
+
+        
+
+        marker1.bindPopup("Día del corte: <b>05/03/2021</b><br>Hora del corte: <b>11:46 hs</b><br>Tiempo estimado de reposición: <b>3 horas</b><br>Estado del corte: <b>“CORTE REPORTADO”</b><br><a href='#'>Más información acerca del tiempo<br>estimado de reposición</a>").isPopupOpen();
+
+        marker2.bindPopup("<b>Corte programado.</b><br>Día del corte: <b>07/03/2021</b><br>Hora del corte: <b>08:00 hs</b><br>Duración del corte: <b>6 horas</b><br>Motivo del corte: <b>“MANTENIMIENTO PREV.”</b><br><a href='#'>Más información acerca de los cortesprogramados</a>").isPopupOpen();
+
+        
+        
+        
+        // Area
+
+        
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
 </body>
 </html>

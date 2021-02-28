@@ -675,12 +675,101 @@
 
         .cuerpo__reclamos{
             grid-area: reclamos;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;            
             border: #f0e9e9 solid 2px;
             border-radius: 5px;
             height: 50vh;
             width: 75vw;
             margin-left: 20px;
             background-color: #FBFBFB;
+
+            .iconoPlus{
+                align-self: flex-end;                
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                width: 50px;
+                border-radius: 50px;
+                background-color:#4D97FA ;
+                color: #FBFBFB;
+                box-shadow: 3px 3px 5px #0e3f70;
+                transition: transform 0.1s;
+                a{
+                    text-decoration: none;
+                    color: #FBFBFB;
+                }
+                
+            }
+
+            .iconoPlus:hover{
+                transform: scale(1.005 , 1.005);
+                background-color:#4582d3;               
+                a{
+                    color: #d4d1d1;
+                }
+            }
+
+            .iconoSiguiente{
+                align-self: flex-end;                
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                height: 5vh;
+                width: 8vw;
+                border-radius: 5px;
+                background-color:#4D97FA ;
+                color: #FBFBFB;
+                font-size: 1rem;
+                box-shadow: 3px 3px 5px #0e3f70;
+                transition: transform 0.1s;
+                a{
+                    text-decoration: none;
+                    color: #FBFBFB;
+                }
+                
+            }
+
+            .iconoSiguiente:hover{
+                transform: scale(1.005 , 1.005);
+                background-color:#4582d3;               
+                a{
+                    color: #d4d1d1;
+                }
+            }
+
+            .margen{
+                margin-left: 2vw;
+            }
+
+            div.reclamo1{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                border: #f0e9e9 solid 1px;
+                border-radius: 5px;
+                background-color: #f8f1f1;
+                height: 25vh;
+                width: 80vw;
+                font-size: 0.8rem;
+                line-height: 0;
+                padding: 2vh 2vh;
+                margin: 5px 5px;
+
+
+                h3{
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+               
+
+            }
+
+
         }
 
         @for $i from 2 through 3{
