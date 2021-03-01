@@ -156,36 +156,69 @@
                 </div>
             </div>
             <div class="cuerpo__reclamos container">
-                <div class="formulario__primero">
-                    <p class="titulo">Completá los siguientes datos:</p>
-                    <p>Envianos tu reclamo las 24 hs. todos los días del año</p>
-                    <p>Seleccionar el motivo del reclamo *</p>
-                    <div class="margen">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" name="customRadio" id="customRadio1" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio1">Sin Luz</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" name="customRadio" id="customRadio2" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio2">Baja Tensión</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" name="customRadio" id="customRadio3" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio3"><a href="peligroViaPublica.html">Peligro en vía Pública</a></label>
-                        </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div role="tabpanel">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item col-sm-6 active" role="presentation">
+                                  <a class="nav-link" href="#enCurso" aria-controls="enCurso" data-toggle="tab" role="tab">
+                                      En curso
+                                    </a>
+                                </li>
+                                    
+                                <li class="nav-item col-sm-6" role="presentation">
+                                  <a class="nav-link" href="#cerrados" aria-controls="cerrados" data-toggle="tab" role="tab">
+                                      Cerrados
+                                    </a>
+                                </li>                    
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="enCurso" role="tabpanel">
+                                    <div class="reclamo1 col-sm">
+                                        <h3>Reclamo N: 98421589</h3>
+                                        <p>Día Realizado: 05/03/2021</p>
+                                        <p>Hora Realizado: 11:48 hs</p>
+                                        <p>Tiempo estimado de reposición: 3 horas</p>
+                                        <p>Estado del Reclamo:</p>
+                                        <p><a href="mapa-interrupciones.html">Ver en el mapa</a></p>
+                                        <p><a href="#">Más información acerca del tiempo estimado de reposición</a></p>
+                                        <p><a href="#">Dar de baja el reclamo</a></p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="tab-pane" id="cerrados" role="tabpanel">
+                                    <div class="reclamo1 col-sm">
+                                        <h3>Reclamo N: </h3>
+                                        <p>Día Realizado: 05/03/2021</p>
+                                        <p>Hora Realizado: 11:48 hs</p>
+                                        <p>Tiempo estimado de reposición: 3 horas</p>
+                                        <p>Estado del Reclamo:</p>
+                                        <p><a href="mapa-interrupciones.html">Ver en el mapa</a></p>
+                                        <p><a href="#">Más información acerca del tiempo estimado de reposición</a></p>
+                                        <p>
+                                            <a href="#">Dar de baja el reclamo</a>
 
-                        <div class="row">                            
-                            <div class="col-sm-8">
-                                <input id="codArea" name="codigo" type="text" placeholder="Cod Area *" class="col-sm-3">
-                                <input id="numero" name="numero" type="text" placeholder="Número de contacto *" class="col-sm-5">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" name="customRadio" id="customRadio2" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio2">Baja Tensión</label>
+                                            </div>
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" name="customRadio" id="customRadio3" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio3">Peligro en vía Pública</label>
+                                            </div>
+                                        
+                                        </p>                                        
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
+                        </div>                    
                     </div>
                 </div>  
-                <div class="iconoSiguiente">
-                    <a href="reclamosPageTwo.html">
-                        SIGUIENTE
+                <div class="iconoPlus">
+                    <a href="reclamosPageOne.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                        </svg>
                     </a>
                 </div>              
             </div>          

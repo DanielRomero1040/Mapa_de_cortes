@@ -119,7 +119,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="notificaciones.html" class="nav-link">
                                 
                                 <div class="icon2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
@@ -195,7 +195,32 @@
                                         <p>Estado del Reclamo:</p>
                                         <p><a href="mapa-interrupciones.html">Ver en el mapa</a></p>
                                         <p><a href="#">Más información acerca del tiempo estimado de reposición</a></p>
-                                        <p><a href="#">Dar de baja el reclamo</a></p>
+                                        <p>
+                                            <a class="" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample" href="#baja">
+                                                Dar de baja el reclamo
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="baja">
+                                            <div class="card card-body">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" name="customRadio" id="customRadio1" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio1">Ya tengo luz.</label>
+                                                </div>                                                
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" name="customRadio" id="customRadio2" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio2">
+                                                        <p class="col-sm-6">Otro:</p>                                                                                                                
+                                                        <input id="otro" name="texto" type="text" placeholder="describa otro motivo" class="">
+                                                    </label>
+                                                </div>
+                                                <!--<div class="">                            
+                                                    <div class="">                                                        
+                                                        <input id="otro" name="texto" type="text" placeholder="describa otro motivo" class="col-sm-5">
+                                                    </div>
+                                                </div>--> 
+                                                
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
