@@ -152,9 +152,25 @@
             <div class="misCuentas">
                 <h2>Mapa de Cortes</h2>
                 
-            </div>            
-            <div id="map"></div>
-
+            </div>
+            <div class="mapa__contenido">            
+                <div id="map">                    
+                </div>
+                
+                <div class="opinion">
+                    <p>¿Estás satisfecho con la información suministrada?</p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="  ¡Tu opinión nos interesa!">
+                    </form>
+                </div>
+            </div>
         </section>
         <footer class="contenido__footer">
             <div>
@@ -212,10 +228,30 @@
 
         marker2.bindPopup("<b>Corte programado.</b><br>Día del corte: <b>07/03/2021</b><br>Hora del corte: <b>08:00 hs</b><br>Duración del corte: <b>6 horas</b><br>Motivo del corte: <b>“MANTENIMIENTO PREV.”</b><br><a href='#'>Más información acerca de los cortesprogramados</a>").isPopupOpen();
 
-        
-        
-        
         // Area
+        var polygon = L.polygon([
+            [-34.6635717547233, -58.55264258677614],
+            [-34.662812931129785, -58.55368047928812],
+            [-34.66211101311878, -58.55259645822005],            
+            [-34.66167468270969, -58.55200831912993],
+            [-34.662594768060494, -58.55087816950578],
+            [-34.6632777114055, -58.551166472981315],
+            [-34.66403653074257, -58.55049760891804],
+            [-34.66455821500562, -58.551420180039806],
+            [-34.66368557766295, -58.55263105463712]
+
+            
+        ] ,
+        {   color: '#02E700',
+            opacity: 0.2,
+            fillColor: '#02E700',
+            fillOpacity: 0.2,}
+        ).addTo(mymap);
+
+        
+        
+        
+        
 
         
     </script>

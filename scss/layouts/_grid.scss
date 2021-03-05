@@ -553,10 +553,37 @@
             }
         }
 
-               
+        div.mapa__contenido{
+            display: flex;
+            flex-direction: column;            
+            text-align: center;
+            div.opinion{
+                margin-top: 1vh;
+                height: 10vh;
+                display: flex;
+                flex-direction: column;            
+                justify-content: center;
+                p{
+                    margin: 0;
+                    font-size: 80%;
+                }
+
+                input{
+                    border-radius: 7px;
+                    border: 0.5px gray solid;
+                    justify-self: center;
+                    font-size: 85%;
+                }
+                span:hover {
+                    color: orange;
+                }
+                
+                
+            }
+        }       
 
         div#map{
-            height: 70vh;
+            height: 63vh;
             width: 75vw;
                      
         }

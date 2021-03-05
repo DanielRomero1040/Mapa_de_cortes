@@ -376,8 +376,28 @@
         transition: all 0.5s; }
       .contenido .contenido__cuerpo--mapa .misCuentas div.asociar:hover {
         background-color: #E1E1E1; }
+    .contenido .contenido__cuerpo--mapa div.mapa__contenido {
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      .contenido .contenido__cuerpo--mapa div.mapa__contenido div.opinion {
+        margin-top: 1vh;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .contenido .contenido__cuerpo--mapa div.mapa__contenido div.opinion p {
+          margin: 0;
+          font-size: 80%; }
+        .contenido .contenido__cuerpo--mapa div.mapa__contenido div.opinion input {
+          border-radius: 7px;
+          border: 0.5px gray solid;
+          justify-self: center;
+          font-size: 85%; }
+        .contenido .contenido__cuerpo--mapa div.mapa__contenido div.opinion span:hover {
+          color: orange; }
     .contenido .contenido__cuerpo--mapa div#map {
-      height: 70vh;
+      height: 63vh;
       width: 75vw; }
     .contenido .contenido__cuerpo--mapa .leaflet-popup-content-wrapper {
       background: linear-gradient(to right, #2976c4 0%, #4D97FA 50%, #02E700 100%);
