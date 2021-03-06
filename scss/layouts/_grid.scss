@@ -568,14 +568,35 @@
                     font-size: 80%;
                 }
 
-                input{
+                input.tuOpinion{
                     border-radius: 7px;
                     border: 0.5px gray solid;
                     justify-self: center;
                     font-size: 85%;
                 }
-                span:hover {
-                    color: orange;
+
+                .starrating > input {
+                    display: none;
+                }
+
+                .starrating > label:before { 
+                    content: "\f005"; /* Star */
+                    margin: 0 2px;
+                    font-size: 1em;
+                    font-family: FontAwesome;
+                    display: inline-block; 
+                }
+
+                .starrating > label{
+                    color: #a7a4a4; /* Start color when not clicked */
+                }
+
+                .starrating > input:checked ~ label{ 
+                    color: #ffca08 ; 
+                }
+
+                .starrating > input:hover ~ label{ 
+                    color: #ffca08 ;  
                 }
                 
                 
@@ -590,11 +611,12 @@
 
         .leaflet-popup-content-wrapper {
             background: linear-gradient(to right, #2976c4  0%, #4D97FA 50%, #02E700 100%);
-            color: white;
-            text-decoration: none;
+            color: rgb(46, 45, 45);
             
-            .popup__a{
-                text-decoration: none;
+            
+            a{
+                
+                color: white;
             }
           }
 
@@ -717,6 +739,7 @@
             }
 
             .formulario__primero{
+                overflow: auto;
                 .margen{
                     margin-left: 2vw;
                     display: flex;
@@ -730,6 +753,9 @@
                         }
                         
                     } 
+                    .telofono input{
+                        /*border: black 1px solid;*/
+                    }
                 }
             }
             
@@ -790,15 +816,17 @@
             }
 
             .formulario__viaPublica{
+                overflow: auto;
                 
                 .margen{
                     margin-left: 2vw;
                     display: flex;
                     flex-direction: row;
                     justify-content: flex-start;                    
-                    height:30vh;  
+                    height:40vh;  
                                     
                     .foto{
+                        margin-top: 0;
                         padding-left: 10vw;
                         .fotoAdjunta{
                             background-image: url(../imagenes/posteCaido.jpg);
@@ -822,7 +850,7 @@
                     flex-direction: row;
                     align-items: center;
                     justify-content: center;
-                    height: 5vh;
+                    height: 4vh;
                     width: 8vw;
                     border-radius: 5px;
                     background-color:#4D97FA ;

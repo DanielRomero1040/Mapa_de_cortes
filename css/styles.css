@@ -389,22 +389,35 @@
         .contenido .contenido__cuerpo--mapa div.mapa__contenido div.opinion p {
           margin: 0;
           font-size: 80%; }
-        .contenido .contenido__cuerpo--mapa div.mapa__contenido div.opinion input {
+        .contenido .contenido__cuerpo--mapa div.mapa__contenido div.opinion input.tuOpinion {
           border-radius: 7px;
           border: 0.5px gray solid;
           justify-self: center;
           font-size: 85%; }
-        .contenido .contenido__cuerpo--mapa div.mapa__contenido div.opinion span:hover {
-          color: orange; }
+        .contenido .contenido__cuerpo--mapa div.mapa__contenido div.opinion .starrating > input {
+          display: none; }
+        .contenido .contenido__cuerpo--mapa div.mapa__contenido div.opinion .starrating > label:before {
+          content: "\f005";
+          /* Star */
+          margin: 0 2px;
+          font-size: 1em;
+          font-family: FontAwesome;
+          display: inline-block; }
+        .contenido .contenido__cuerpo--mapa div.mapa__contenido div.opinion .starrating > label {
+          color: #a7a4a4;
+          /* Start color when not clicked */ }
+        .contenido .contenido__cuerpo--mapa div.mapa__contenido div.opinion .starrating > input:checked ~ label {
+          color: #ffca08; }
+        .contenido .contenido__cuerpo--mapa div.mapa__contenido div.opinion .starrating > input:hover ~ label {
+          color: #ffca08; }
     .contenido .contenido__cuerpo--mapa div#map {
       height: 63vh;
       width: 75vw; }
     .contenido .contenido__cuerpo--mapa .leaflet-popup-content-wrapper {
       background: linear-gradient(to right, #2976c4 0%, #4D97FA 50%, #02E700 100%);
-      color: white;
-      text-decoration: none; }
-      .contenido .contenido__cuerpo--mapa .leaflet-popup-content-wrapper .popup__a {
-        text-decoration: none; }
+      color: #2e2d2d; }
+      .contenido .contenido__cuerpo--mapa .leaflet-popup-content-wrapper a {
+        color: white; }
   .contenido .contenido__cuerpo--reclamosPrincipal {
     grid-area: cuerpo;
     height: auto;
@@ -483,16 +496,20 @@
       background-color: #FBFBFB; }
       .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .titulo {
         font-weight: bold; }
-      .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__primero .margen {
-        margin-left: 2vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly; }
-        .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__primero .margen div {
-          padding: 0.5vh 0; }
-          .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__primero .margen div label a {
-            text-decoration: none;
-            color: black; }
+      .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__primero {
+        overflow: auto; }
+        .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__primero .margen {
+          margin-left: 2vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly; }
+          .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__primero .margen div {
+            padding: 0.5vh 0; }
+            .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__primero .margen div label a {
+              text-decoration: none;
+              color: black; }
+          .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__primero .margen .telofono input {
+            /*border: black 1px solid;*/ }
       .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__segundo {
         overflow: auto; }
         .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__segundo .margen {
@@ -530,41 +547,44 @@
         justify-content: space-evenly; }
         .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__tercero .margen div {
           padding: 0.5vh 0; }
-      .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__viaPublica .margen {
-        margin-left: 2vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        height: 30vh; }
-        .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__viaPublica .margen .foto {
-          padding-left: 10vw; }
-          .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__viaPublica .margen .foto .fotoAdjunta {
-            background-image: url(../imagenes/posteCaido.jpg);
-            background-size: cover;
-            background-position: center center;
-            height: 20vh;
-            width: 10vw;
-            padding: 2vh 0;
-            margin: 2vh 0; }
-      .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__viaPublica .iconoAdjuntar {
-        align-self: flex-end;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        height: 5vh;
-        width: 8vw;
-        border-radius: 5px;
-        background-color: #4D97FA;
-        color: #FBFBFB;
-        font-size: 1rem;
-        box-shadow: 3px 3px 5px #0e3f70;
-        transition: transform 0.1s;
-        margin-bottom: 10px;
-        margin-right: 10px; }
-        .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__viaPublica .iconoAdjuntar a {
-          text-decoration: none;
-          color: #FBFBFB; }
+      .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__viaPublica {
+        overflow: auto; }
+        .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__viaPublica .margen {
+          margin-left: 2vw;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          height: 40vh; }
+          .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__viaPublica .margen .foto {
+            margin-top: 0;
+            padding-left: 10vw; }
+            .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__viaPublica .margen .foto .fotoAdjunta {
+              background-image: url(../imagenes/posteCaido.jpg);
+              background-size: cover;
+              background-position: center center;
+              height: 20vh;
+              width: 10vw;
+              padding: 2vh 0;
+              margin: 2vh 0; }
+        .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__viaPublica .iconoAdjuntar {
+          align-self: flex-end;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          height: 4vh;
+          width: 8vw;
+          border-radius: 5px;
+          background-color: #4D97FA;
+          color: #FBFBFB;
+          font-size: 1rem;
+          box-shadow: 3px 3px 5px #0e3f70;
+          transition: transform 0.1s;
+          margin-bottom: 10px;
+          margin-right: 10px; }
+          .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .formulario__viaPublica .iconoAdjuntar a {
+            text-decoration: none;
+            color: #FBFBFB; }
       .contenido .contenido__cuerpo--reclamosPrincipal .cuerpo__reclamos .iconoPlus {
         align-self: flex-end;
         display: flex;

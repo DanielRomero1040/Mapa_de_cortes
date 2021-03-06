@@ -48,7 +48,7 @@
                 <div class="nav__menu">
 
                     <div class="cliente">
-                        <p>¡Hola, ROMERO GARNICA JOSUE DAVID!</p>
+                        <p>¡Hola, FRANCO SALDIVIA!</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                         </svg>
@@ -159,15 +159,17 @@
                 
                 <div class="opinion">
                     <p>¿Estás satisfecho con la información suministrada?</p>
-                    <div class="stars">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
+                    <div class="container">
+                        <div class="starrating risingstar d-flex justify-content-center flex-row-reverse">
+                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 star"></label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 star"></label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 star"></label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 star"></label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star"></label>
+                        </div>
                     </div>
                     <form action="">
-                        <input type="text" placeholder="  ¡Tu opinión nos interesa!">
+                        <input class="tuOpinion" type="text" placeholder="  ¡Tu opinión nos interesa!">
                     </form>
                 </div>
             </div>
@@ -224,9 +226,9 @@
 
         
 
-        marker1.bindPopup("Día del corte: <b>05/03/2021</b><br>Hora del corte: <b>11:46 hs</b><br>Tiempo estimado de reposición: <b>3 horas</b><br>Estado del corte: <b>“CORTE REPORTADO”</b><br><a href='#'>Más información acerca del tiempo<br>estimado de reposición</a>").isPopupOpen();
+        marker1.bindPopup("Día del corte: <b>05/03/2021</b><br>Hora del corte: <b>11:46 hs</b><br>Fecha y Hora estimada de reposición: <b>05/03/2021 14:00hs</b><br>Estado del corte: <b>“EQUIPO MOVIL EN CAMINO”</b><br><a href='#'>Más información acerca del tiempo<br>estimado de reposición</a>").isPopupOpen();
 
-        marker2.bindPopup("<b>Corte programado.</b><br>Día del corte: <b>07/03/2021</b><br>Hora del corte: <b>08:00 hs</b><br>Duración del corte: <b>6 horas</b><br>Motivo del corte: <b>“MANTENIMIENTO PREV.”</b><br><a href='#'>Más información acerca de los cortesprogramados</a>").isPopupOpen();
+        marker2.bindPopup("<b>Corte programado.</b><br>Día del corte: <b>07/03/2021</b><br>Hora del corte: <b>08:00 hs</b><br>Fecha y Hora estimada de reposición: <b>07/03/2021 14:00hs</b><br>Motivo del corte: <b>“MANTENIMIENTO PREV.”</b><br><a href='#'>Más información acerca de los cortesprogramados</a>").isPopupOpen();
 
         // Area
         var polygon = L.polygon([
