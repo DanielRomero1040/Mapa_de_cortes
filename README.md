@@ -22,7 +22,6 @@ _A continuación parte de las herramientas y tecnologías utilizadas._
 
 * Comenta a otros sobre este proyecto 📢
 * Invita una pizza 🍕 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
 * etc.
 
 
